@@ -13,7 +13,7 @@
         BinaryTreeNode(T x, BinaryTreeNode<T> *left, BinaryTreeNode<T> *right) : data(x), left(left), right(right) {}
     };
 */
-
+/*
 
 bool searchInBST(BinaryTreeNode<int> *root, int x) {
     // Write your code here.
@@ -35,3 +35,5 @@ bool searchInBST(BinaryTreeNode<int> *root, int x) {
     }
     return 0;
 }
+
+*/
