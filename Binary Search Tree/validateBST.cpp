@@ -1,7 +1,7 @@
 #include <bits/stdc++.h> 
-/*************************************************************
- 
-    Following is the Binary Tree node structure
+
+ /*
+    //Following is the Binary Tree node structure
 
     class BinaryTreeNode 
     {
@@ -17,7 +17,6 @@
         }
     };
 
-*************************************************************/
 bool isBST(BinaryTreeNode<int> *root, int min, int max){
     if(root ==NULL)
         return true;
@@ -36,3 +35,5 @@ bool validateBST(BinaryTreeNode<int> *root) {
     // Write your code here
     return isBST( root, INT_MIB)
 }
+
+*/
