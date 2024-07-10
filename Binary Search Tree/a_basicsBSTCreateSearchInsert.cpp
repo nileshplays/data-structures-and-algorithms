@@ -65,6 +65,41 @@ void takeInput(Node* &root){
     }
 }
 
+Node* minNode(Node* root){
+    Node* temp = root;
+    while(temp ->left != NULL){
+        temp =temp->left;
+    }
+    return temp;
+}
+Node* maxNode(Node* root){
+    Node* temp = root;
+    while(temp ->right != NULL){
+        temp =temp->right;
+    }
+    return temp;
+}
+
+Node* nodeToDeleteBST(Node* root, int d){
+    if(root ==NULL)
+        return NULL;
+    
+    if(root->data == d){
+        // 0 child
+
+        //1 child
+
+        //2 child 
+    }
+    else if(root->data > d){ // Left me jao
+        root->left =nodeToDeleteBST(root->left , d);
+        return root;
+    }
+    else{
+        root->right =nodeToDeleteBST(root->right , d);
+        return root;
+    }
+}
 
 int main(){
     Node* root = NULL;
@@ -73,4 +108,9 @@ int main(){
 
     cout<<"Traversing Level Order Traversing:: "<<endl;
     levelOrderTraversal(root);
+
+    int minVal = minNode(root)->data;
+    cout<<"MIN Value: "<<minVal<<endl;
+    int maxVal = maxNode(root)->data;
+    cout<<"MAX Value: "<<maxVal<<endl;
 }
