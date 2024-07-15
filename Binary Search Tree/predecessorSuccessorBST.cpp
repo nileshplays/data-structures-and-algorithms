@@ -1,4 +1,3 @@
-/*************************************************************
 
     Following is the Binary Tree node structure
     class TreeNode
@@ -59,4 +58,3 @@ pair<int, int> predecessorSuccessor(TreeNode *root, int key)
 
     return make_pair(pred,succ);
 }
-*************************************************************/
